@@ -55,7 +55,3 @@ if uploaded_file is not None:
 
     st.subheader("📌 Hasil Prediksi")
     st.write(f"Model memprediksi gambar ini adalah **{label}** dengan probabilitas **{confidence:.2f}%**")
-
-    st.write("🔎 Probabilitas masing-masing kelas:")
-    for i, class_name in enumerate(class_names):
-        st.write(f"- {class_name}: {100 * score[i]:.2f}%")
